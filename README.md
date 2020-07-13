@@ -145,5 +145,7 @@ React 的單向資料流架構模式
                                                                         
   # Ref Doc
   
+  https://www.bookstack.cn/read/reactjs101-zh-tw/Ch07-react-flux-introduction.md
+  
   https://www.coder.work/article/5253263
                                                                         
