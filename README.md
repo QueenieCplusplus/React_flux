@@ -13,6 +13,12 @@ React 的單向資料流架構模式
 * View, view 視圖 (render 渲染應用程式的元件樹)
 
 
+     
+        
+                                                                                分配器於資料儲存中，
+                                                                                註冊回呼函式，
+                                                                                分配器也管理依賴。
+                                                                                
                               Action   ------>   Dispatcher   ------>   callbacl
 
                                 |                                           |
