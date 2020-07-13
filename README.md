@@ -39,7 +39,87 @@ React 的單向資料流架構模式
                                                                         }
                                                                         
                                                                         
-                                                                        
+    
+    
+       // 2020, 7/13, pm 1:10 - 1: 35 (duration: 30 mins)
+       // flux
+
+       var React = require("react");
+
+
+// UI Action -> Dispatcher
+       
+        var App = React.createClass({
+
+           // Action
+           AppAction: {
+
+               save: function(){},
+               delete: function(id){},
+               update: function(id){},
+               get: function(res){}
+
+           },
+
+           // UI Action -> Dispatcher
+           clickHandler: function(){
+
+               // onSave is a Dispather
+               this.props.onSave(this.state.id);
+
+           },
+
+           render: function(){
+
+               return(
+
+                   // onClick = {this.method} , this is bind html event to UI action to this class
+                   <div>
+                       <button onClick={this.clickHandler}>
+                           Save Info Now
+                       </button>
+                   </div>
+
+               );
+
+           }
+
+       });
+
+
+// View -> UI Action
+
+     var UIController = React.createClass({
+
+         render: function(){
+
+             var props = merge(
+
+                 {}, this.state.app, {onSave = this.saveHandler};
+
+             );
+
+             return App(props);
+
+         }
+
+     });
+
+// Dispatcher -> Store
+
+     Dispatcher.register(function(payload){
+
+         switch(payload.actionType){
+             case AppConstants.Record: AppStore.save(payload.res);
+         }
+
+     });
+
+// Store -> Event -> View
+
+     AppStore.prototype.save = function(res){
+         this.emitChange();
+     }
                                                                         
                                                                         
                                                                         
