@@ -39,13 +39,6 @@ React 的單向資料流架構模式
                                                                         }
                                                                         
                                                                         
-    
-    
-       // 2020, 7/13, pm 1:10 - 1: 35 (duration: 30 mins)
-       // flux
-
-       var React = require("react");
-
 
 // UI Action -> Dispatcher
        
