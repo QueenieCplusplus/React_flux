@@ -38,7 +38,9 @@ React 的單向資料流架構模式
                                                                         return{};
                                                                         }
                                                                         
-                                                                        
+ 
+ ![flux](https://static.bookstack.cn/projects/reactjs101-zh-tw/Ch07/images/flux-simple-diagram.png)
+ 
 
 // UI Action -> Dispatcher
        
