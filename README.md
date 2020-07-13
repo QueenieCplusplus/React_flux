@@ -5,7 +5,7 @@ React 的單向資料流架構模式
 
 * store 儲存
 
-* dispatch 分配
+* dispatch 分配（利用 Action 介面定義分配器）
 
 * view 視圖
 
