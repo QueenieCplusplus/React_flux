@@ -1,2 +1,2 @@
-# React_flux
-React 的資料流架構模式
+# React flux
+React 的單向資料流架構模式
