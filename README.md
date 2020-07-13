@@ -7,7 +7,7 @@ React 的單向資料流架構模式
 
 * Model, store 儲存
 
-* Controller, dispatch 分配（利用 Action 介面定義分配器, Action 也可視為應用程式中的領域特定語言 domain-specific-language）
+* Controller, dispatch 分配器為應用程式的中樞。（利用 Action 介面定義分配器, Action 也可視為應用程式中的領域特定語言 domain-specific-language）
 
 * View, view 視圖
 
