@@ -28,7 +28,7 @@ React 的單向資料流架構模式
                                 |                                           |
                                 |                                           V
 
-        Web API ------>    Action Creator                                 Store    封裝商業邏輯與應用程式資料的互動
+        Web API ------>    Action Creator                                 Store    封裝商業邏輯與應用程式資料的互動，沒有 setter，新增通過資料儲存的變更事件送回應用程式，更新則通過分配器來到 store。
 
                                 |                                           |
                                 |                                           V
