@@ -11,3 +11,18 @@ React 的單向資料流架構模式
 
 * View, view 視圖
 
+
+                              Action   ------>   Dispatcher   ------>   callbacl
+
+                                |                                           |
+                                |                                           V
+
+        Web API ------>    Action Creator                                 Store
+
+                                |                                           |
+                                |                                           V
+
+                               button                                    onChange(Event){
+                               input     ------     Views      <------          
+                                                                          return{};
+                                                                        }
