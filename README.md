@@ -113,6 +113,32 @@ React 的單向資料流架構模式
      AppStore.prototype.save = function(res){
          this.emitChange();
      }
+     
+     
+     var UI= React.createClass({
+     
+     
+         changeHandler: function(){
+
+            AppStore.listout(function(id){
+            
+            });
+
+         },
+
+         componentDidMount: function(){
+
+            AppStore.addChangeListener(this.changeHandler);
+
+         },
+
+         componentWillUnMount: function(){
+
+            AppStore.removeChangeListener(this.changeHandler);
+
+         }     
+     
+     })
                                                                         
                                                                         
                                                                         
